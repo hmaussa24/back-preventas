@@ -20,6 +20,8 @@ app.use(express.json());
 
 //Routes
 app.use(require("./routes/empresas"));
+app.use(require("./routes/users"));
+app.use(require("./routes/productos"))
 
 // Staring server
 app.listen(app.get("port"), () => {
